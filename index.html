@@ -1,0 +1,85 @@
+<html>
+<head>
+    <!-- Website Designed & Developed By Vaibhav Gangurde - vaibhav.webflow.io -->
+    <title>Survey Form | vaibhav17.webflow.io</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&family=Roboto+Slab:wght@500&family=Vollkorn:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+
+        <header class="header">
+            <h1 class="title" id="title"> Grilled Burger Store Survey Form</h1>
+            <p class="description" id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <div class="container">
+          <form id="survey-form">
+            <div class="form-group">
+                <label for="Name" id="name-label" ><b>Name :</b></label>
+                <input class="form-control"  type="text" id="name" name="fname" placeholder="Enter Your Name " required>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="number-label" ><b>Age :</b></label>
+                <input class="form-control" type="number"  id="number" name="age" id="number" min="10" max="99" placeholder="Enter Your Age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label"><b>Email :</b></label>
+                <input class="form-control"  type="email" id="email" name="email" placeholder="Enter Your Email " required>
+            </div>
+
+            <div class="form-group">
+                <label for="role"><b>Which option best describes your current role?</b></label>
+                <select class="form-control" id="dropdown" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="jobholder">Job Holder</option>
+                    <option value="others ">Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="recommend"><b>Would you recommend our Burger to a friend?</b></label>
+                <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" Checked>Definitely</label>
+                <label ><input name="user-recommend" value="maybe" type="radio" class="input-radio" >Maybe</label>
+                <label><input name="user-recommend" value="not_sure" type="radio" class="input-radio">Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <label for="feature"><b>What is your favorite feature of our Burger?</b></label>
+                <select class="form-control" id="dropdown" name="feature" required>
+                    <option disabled selected value>Select Feature</option>
+                    <option value="flavor">The Theme (flavor)</option>
+                    <option value="patty">The Patty</option>
+                    <option value="sauce">The Sauce</option>
+                    <option value="toppings">The Toppings</option>
+                    <option value="bun">The Bun</option>
+                </select>
+            </div>
+
+                <label for="improve"><b>I found customer service to be friendly and welcoming</b></label>
+                <label><input   type="checkbox" class="input-checkbox" name="customer_service" value="easypaisa">Strongly Agree</label>
+                <label><input type="checkbox" class="input-checkbox" name="customer_service" value="Credit Card">Agree</label>
+                <label><input type="checkbox" class="input-checkbox" name="customer_service" value="Bank Transfer"> Neutral</label>
+                <label><input type="checkbox" class="input-checkbox" name="customer_service" value="Once_in_a_year"> Disagree</label>
+                <label><input type="checkbox" class="input-checkbox" name="customer_service" value="Never">Strongly Disagree</label>
+                
+                <label for="comments"><b>Any comments or suggestions?</b></label>
+
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                </div>
+          </form>
+        </div>
+        
+        <!-- Script for FCC TEST -->
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
